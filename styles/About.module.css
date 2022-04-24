@@ -1,0 +1,34 @@
+.about {
+  padding: 5em 1em;
+  text-align: center;
+  background-color: var(--accent-color);
+}
+
+.hello {
+  font-family: var(--display-font);
+  text-transform: uppercase;
+}
+
+.title {
+  margin-top: 0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 3em;
+  font-family: var(--display-font);
+}
+
+.aboutContent {
+  margin: auto;
+  font-size: 1.2em;
+}
+
+@media screen and (min-width: 700px) {
+  .title {
+    font-size: 5em;
+  }
+
+  .aboutContent {
+    max-width: 1000px;
+    font-size: 1.5em;
+  }
+}
