@@ -11,7 +11,7 @@
 
 .title {
   margin-top: 0;
-  color: #fff;
+  color: var(--accent-foreground-headline);
   font-weight: 600;
   font-size: 3em;
   font-family: var(--display-font);
@@ -19,6 +19,7 @@
 
 .aboutContent {
   margin: auto;
+  color: var(--accent-foreground-text);
   font-size: 1.2em;
 }
 

@@ -15,17 +15,12 @@
   justify-content: center;
   width: 2.625rem;
   height: 2.625rem;
-  color: #fff;
+  color: var(--darker-foreground);
   font-size: 1.625em;
   background: none;
   border: none;
   cursor: pointer;
   transition: color var(--transition), background-color var(--transition);
-}
-
-.navButton:hover,
-.navButton:focus {
-  color: #fff8;
 }
 
 .nav {
@@ -34,10 +29,10 @@
   width: 20rem;
   height: 100%;
   padding: 5.25rem 4rem;
-  color: #fff;
+  color: var(--darker-foreground);
   font-size: 1.2em;
   font-family: var(--display-font);
-  background: #000;
+  background: var(--darker-background);
   transition: right var(--transition);
 }
 

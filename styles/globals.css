@@ -1,8 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Montserrat:ital,wght@0,600;0,700;1,600;1,700&display=swap");
 
 :root {
+  --black: #000;
+  --black-d: #000d;
+  --white: #fff;
   --green: #39b54a;
+  --darker-foreground: var(--white);
+  --darker-background: var(--black);
+  --dark-foreground: var(--white);
+  --dark-background: var(--black-d);
+  --light-foreground: var(--black-d);
+  --dark-foreround: var(--white);
   --accent-color: var(--green);
+  --accent-foreground-headline: var(--white);
+  --accent-foreground-text: var(--black-d);
   --header-height: 6em;
   --base-font: "Lato", serif;
   --display-font: "Montserrat", sans-serif;

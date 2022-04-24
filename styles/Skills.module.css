@@ -1,12 +1,12 @@
 .skillsTitle {
-  color: #fff;
+  color: var(--accent-foreground-headline);
   font-size: 1.5em;
   font-family: var(--display-font);
 }
 
 .skillTitle {
   margin: 0;
-  color: #fff;
+  color: var(--accent-foreground-headline);
   font-size: 1em;
   font-family: var(--display-font);
 }

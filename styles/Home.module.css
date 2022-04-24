@@ -1,8 +1,8 @@
 .home {
   height: 100vh;
   padding: 1em;
-  color: #fff;
-  background-color: #000d;
+  color: var(--dark-foreground);
+  background-color: var(--dark-background);
 }
 
 .homeContent {
@@ -17,14 +17,6 @@
   max-width: 1000px;
   height: 100%;
   margin: auto;
-}
-
-.name {
-  grid-area: name;
-  color: #ffffff80;
-  font-weight: 600;
-  font-family: var(--display-font);
-  text-transform: uppercase;
 }
 
 .info {
@@ -47,7 +39,7 @@
   font-family: var(--display-font);
   text-transform: uppercase;
   background: none;
-  border: 2px #fff solid;
+  border: 2px var(--dark-foreground) solid;
   border-radius: 0;
   cursor: pointer;
   transition: background var(--transition), color var(--transition);
@@ -55,8 +47,8 @@
 
 .homeButton:hover,
 .homeButton:focus {
-  color: #000;
-  background: #fff;
+  color: var(--light-foreground);
+  background: var(--light-background);
 }
 
 @media screen and (min-width: 500px) {
