@@ -1,0 +1,78 @@
+.navButtonContainer {
+  position: fixed;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: var(--header-height);
+  padding: 0 2em;
+}
+
+.navButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.625rem;
+  height: 2.625rem;
+  color: #fff;
+  font-size: 1.625em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color var(--transition), background-color var(--transition);
+}
+
+.navButton:hover,
+.navButton:focus {
+  color: #fff8;
+}
+
+.nav {
+  position: fixed;
+  right: -20rem;
+  width: 20rem;
+  height: 100%;
+  padding: 5.25rem 4rem;
+  color: #fff;
+  font-size: 1.2em;
+  font-family: var(--display-font);
+  background: #000;
+  transition: right var(--transition);
+}
+
+.navOpen {
+  right: 0;
+}
+
+.navMenu {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navItem {
+  margin: 1.2em 0;
+}
+
+.navLink {
+  position: relative;
+}
+
+.navLink::after {
+  position: absolute;
+  bottom: -0.6rem;
+  left: 0;
+  width: 0%;
+  height: 0.165rem;
+  background-color: var(--accent-color);
+  transition: width var(--transition);
+  content: " ";
+}
+
+.navLink:hover::after,
+.navLink.navLinkActive::after {
+  width: 100%;
+}
