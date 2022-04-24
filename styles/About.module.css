@@ -4,17 +4,11 @@
   background-color: var(--accent-color);
 }
 
-.hello {
-  font-family: var(--display-font);
-  text-transform: uppercase;
-}
-
 .title {
   margin-top: 0;
   color: var(--accent-foreground-headline);
   font-weight: 600;
   font-size: 3em;
-  font-family: var(--display-font);
 }
 
 .aboutContent {

@@ -12,7 +12,6 @@
   color: var(--dark-foreground);
   font-weight: 700;
   font-size: 1.625em;
-  font-family: var(--display-font);
 }
 
 .titleAccent {
