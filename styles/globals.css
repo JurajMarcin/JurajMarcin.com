@@ -1,16 +1,30 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Montserrat:ital,wght@0,600;0,700;1,600;1,700&display=swap");
+
+:root {
+  --green: #39b54a;
+  --accent-color: var(--green);
+  --header-height: 6em;
+  --base-font: "Lato", serif;
+  --display-font: "Montserrat", sans-serif;
+  --transition: 0.5s ease-in-out;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: var(--base-font);
 }
 
 * {
   box-sizing: border-box;
+}
+
+.quietLink,
+.quietLink:active,
+.quietLink:hover,
+.quietLink:visited {
+  color: inherit;
+  text-decoration: none;
 }
