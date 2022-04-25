@@ -19,7 +19,14 @@ const Home = section({
             Hobbyist Photographer
           </div>
           <div className={styles.action}>
-            <button className={styles.homeButton} type="button" onClick={() => navigate('about')}>
+            <button
+              className={styles.homeButton}
+              type="button"
+              onClick={() => {
+                navigate('about');
+                (document.activeElement as HTMLButtonElement)?.blur();
+              }}
+            >
               More about me
             </button>
           </div>
