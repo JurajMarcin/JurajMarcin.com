@@ -1,5 +1,6 @@
 .navButtonContainer {
   position: fixed;
+  z-index: 11;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -26,9 +27,11 @@
 .nav {
   position: fixed;
   right: -20rem;
+  z-index: 10;
   width: 20rem;
   height: 100%;
   padding: 5.25rem 4rem;
+  overflow-y: scroll;
   color: var(--darker-foreground);
   font-size: 1.2em;
   font-family: var(--display-font);
