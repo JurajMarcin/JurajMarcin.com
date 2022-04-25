@@ -3,12 +3,13 @@ import {
   FaEnvelope, FaGithub, FaInstagram, FaLinkedinIn,
 } from 'react-icons/fa';
 import section from './section';
-
-import styles from '../styles/Contact.module.css';
 import ContactLink from './ContactLink';
 
 const Contact = section({
-  className: styles.contact,
+  style: {
+    color: 'var(--darker-foreground)',
+    backgroundColor: 'var(--darker-background)',
+  },
   title: 'Contact Me',
   children: (
     <article>

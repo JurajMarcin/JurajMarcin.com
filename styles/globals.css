@@ -2,6 +2,7 @@
 
 :root {
   --black: #000;
+  --black-1: #0001;
   --black-d: #000d;
   --white: #fff;
   --green: #39b54a;
@@ -10,7 +11,9 @@
   --dark-foreground: var(--white);
   --dark-background: var(--black-d);
   --light-foreground: var(--black-d);
-  --light-background: var(--white);
+  --light-background: var(--black-1);
+  --lighter-foreground: var(--black-d);
+  --lighter-background: var(--white);
   --accent-color: var(--green);
   --accent-foreground-headline: var(--white);
   --accent-foreground-text: var(--black-d);

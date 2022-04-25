@@ -6,7 +6,10 @@ import SkillList from './SkillList';
 import styles from '../styles/About.module.css';
 
 const About = section({
-  className: styles.about,
+  style: {
+    color: 'var(--accent-foreground-text)',
+    backgroundColor: 'var(--accent-color)',
+  },
   title: 'About Me',
   titleClassName: styles.title,
   children: (

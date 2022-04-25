@@ -47,8 +47,8 @@
 
 .homeButton:hover,
 .homeButton:focus {
-  color: var(--light-foreground);
-  background: var(--light-background);
+  color: var(--lighter-foreground);
+  background: var(--lighter-background);
 }
 
 @media screen and (min-width: 500px) {

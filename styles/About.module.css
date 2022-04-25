@@ -1,8 +1,3 @@
-.about {
-  color: var(--accent-foreground-text);
-  background-color: var(--accent-color);
-}
-
 .title {
   color: var(--accent-foreground-headline);
   font-size: 3em;
