@@ -34,7 +34,7 @@ const EduExpItem = ({
       <span className={styles.timeTo}>{to}</span>
     </div>
     <ul className={styles.list}>
-      {items.map((item) => <li key={item?.toString()}>{item}</li>)}
+      {items.map((item, i) => <li key={`${item} ${i + 1}`}>{item}</li>)}
     </ul>
   </div>
 );
