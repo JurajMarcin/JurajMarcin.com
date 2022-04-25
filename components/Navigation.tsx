@@ -43,7 +43,6 @@ const Navigation = ({ scrollY, navSections }: NavigationProps) => {
               {open ? <FaTimes /> : <FaBars />}
             </button>
           </div>
-
         </>
       )}
     </NavContext.Consumer>

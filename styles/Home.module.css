@@ -34,11 +34,11 @@
 .homeButton {
   width: 215px;
   height: 50px;
-  color: inherit;
+  color: var(--dark-foreground);
   font-weight: 600;
   font-family: var(--display-font);
   text-transform: uppercase;
-  background: none;
+  background: #fff0;
   border: 2px var(--dark-foreground) solid;
   border-radius: 0;
   cursor: pointer;

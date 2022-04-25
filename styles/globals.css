@@ -10,14 +10,14 @@
   --dark-foreground: var(--white);
   --dark-background: var(--black-d);
   --light-foreground: var(--black-d);
-  --dark-foreround: var(--white);
+  --light-background: var(--white);
   --accent-color: var(--green);
   --accent-foreground-headline: var(--white);
   --accent-foreground-text: var(--black-d);
   --header-height: 6em;
   --base-font: "Lato", serif;
   --display-font: "Montserrat", sans-serif;
-  --transition: 0.5s ease-in-out;
+  --transition: 0.3s ease-in-out;
 }
 
 html,
@@ -46,5 +46,21 @@ h3,
 h4,
 h5,
 h6 {
+  margin-top: 0;
+  font-weight: 600;
   font-family: var(--display-font);
+}
+
+a,
+a:active,
+a:hover,
+a:visited {
+  color: inherit;
+  opacity: 1;
+  transition: opacity var(--transition);
+}
+
+a:active,
+a:hover {
+  opacity: 0.75;
 }

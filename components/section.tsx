@@ -1,12 +1,31 @@
-import React, { ReactNode, RefObject } from 'react';
+import React, { CSSProperties, ReactNode, RefObject } from 'react';
 
-export interface SectionProps {
-  ref: RefObject<HTMLDivElement> | undefined;
-  key: string | undefined,
+import styles from '../styles/section.module.css';
+
+export interface SectionFactoryProps {
+  className?: string;
+  children?: ReactNode;
+  noContent?: boolean;
+  style?: CSSProperties;
 }
 
-const section = ({ className, children }: { className?: string, children?: ReactNode }) => (
+export interface SectionProps {
+  ref?: RefObject<HTMLDivElement>;
+  key?: string;
+}
+
+const section = ({
+  className, children, noContent, style,
+}: SectionFactoryProps) => (
   { ref, key }: SectionProps,
-) => <section className={className} ref={ref} key={key}>{children}</section>;
+) => (
+  <section className={`${className} ${noContent ? '' : styles.section}`} style={style} ref={ref} key={key}>
+    {noContent ? children : (
+      <div className={styles.content}>
+        {children}
+      </div>
+    )}
+  </section>
+);
 
 export default section;

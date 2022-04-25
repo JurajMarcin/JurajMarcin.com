@@ -1,0 +1,16 @@
+.contactLink {
+  margin-bottom: 0.625em;
+  font-size: 1.3em;
+}
+
+.icon {
+  margin-right: 0.25em;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 700px) {
+  .contactLink {
+    margin-bottom: 1em;
+    font-size: 1.625em;
+  }
+}

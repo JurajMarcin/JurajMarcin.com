@@ -1,0 +1,16 @@
+.section {
+  padding: 5em 1em;
+  text-align: center;
+}
+
+.content {
+  font-size: 1.2em;
+}
+
+@media screen and (min-width: 700px) {
+  .content {
+    max-width: 1000px;
+    margin: auto;
+    font-size: 1.5em;
+  }
+}

@@ -9,6 +9,7 @@
 }
 
 .title {
+  margin: 0;
   color: var(--dark-foreground);
   font-weight: 700;
   font-size: 1.625em;

@@ -1,29 +1,15 @@
 .about {
-  padding: 5em 1em;
-  text-align: center;
+  color: var(--accent-foreground-text);
   background-color: var(--accent-color);
 }
 
 .title {
-  margin-top: 0;
   color: var(--accent-foreground-headline);
-  font-weight: 600;
   font-size: 3em;
-}
-
-.aboutContent {
-  margin: auto;
-  color: var(--accent-foreground-text);
-  font-size: 1.2em;
 }
 
 @media screen and (min-width: 700px) {
   .title {
     font-size: 5em;
-  }
-
-  .aboutContent {
-    max-width: 1000px;
-    font-size: 1.5em;
   }
 }

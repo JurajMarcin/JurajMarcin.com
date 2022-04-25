@@ -6,6 +6,7 @@ import styles from '../styles/Home.module.css';
 
 const Home = section({
   className: styles.home,
+  noContent: true,
   children: (
     <NavContext.Consumer>
       {({ navigate }) => (
