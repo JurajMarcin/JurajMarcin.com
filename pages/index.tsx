@@ -7,6 +7,10 @@ import NavContext, { NavSection } from '../store/NavContext';
 import Header from '../components/Header';
 import Navigation from '../components/Navigation';
 import About from '../components/About';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
+import Education from '../components/Education';
+import Experience from '../components/Experience';
 
 const Index: NextPage = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -27,6 +31,21 @@ const Index: NextPage = () => {
       name: 'About',
       ref: createRef<HTMLDivElement>(),
       component: About,
+    },
+    education: {
+      name: 'Education',
+      ref: createRef<HTMLDivElement>(),
+      component: Education,
+    },
+    experience: {
+      name: 'Experience',
+      ref: createRef<HTMLDivElement>(),
+      component: Experience,
+    },
+    contact: {
+      name: 'Contact Me',
+      ref: createRef<HTMLDivElement>(),
+      component: Contact,
     },
   });
 
@@ -51,7 +70,7 @@ const Index: NextPage = () => {
 
   useEffect(() => {
     setCurrentHash(Object.entries(navSections)
-      .find(([, { ref }]) => scrollY <= (ref.current?.offsetTop || 0) + window.innerHeight / 1.6)
+      .find(([, { ref }]) => scrollY <= (ref.current?.offsetTop || 0) + window.innerHeight / 2)
       ?.[0] || 'invalid');
   }, [setCurrentHash, navSections, scrollY]);
 
@@ -66,6 +85,7 @@ const Index: NextPage = () => {
       <Navigation scrollY={scrollY} navSections={navSections} />
       {Object.entries(navSections)
         .map(([hash, { component, ref }]) => component({ ref, key: hash }))}
+      <Footer />
     </NavContext.Provider>
   );
 };

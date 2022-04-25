@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1em;
+}
+
+.name {
+  flex-basis: 0;
+  flex-grow: 1;
+  text-align: right;
+}
+
+.name:only-child {
+  text-align: center;
+}
+
+.title {
+  flex-basis: 0;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.sep {
+  display: block;
+  justify-self: center;
+  width: 2px;
+  height: 1.17em;
+  background: var(--lighter-foreground);
+}
+
+.time {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: 0;
+  opacity: 0.7;
+}
+
+.timeFrom {
+  flex-basis: 0;
+  flex-grow: 1;
+  text-align: right;
+}
+
+.timeTo {
+  flex-basis: 0;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.list {
+  list-style: inside;
+}
