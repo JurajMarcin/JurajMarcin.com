@@ -1,0 +1,7 @@
+.footer {
+  padding: 3em;
+  color: var(--darker-foreground);
+  font-family: var(--display-font);
+  text-align: center;
+  background-color: var(--darker-background);
+}
