@@ -4,6 +4,8 @@ import styles from '../styles/section.module.css';
 
 export interface SectionFactoryProps {
   className?: string;
+  title?: ReactNode;
+  titleClassName?: string;
   children?: ReactNode;
   noContent?: boolean;
   style?: CSSProperties;
@@ -15,15 +17,20 @@ export interface SectionProps {
 }
 
 const section = ({
-  className, children, noContent, style,
+  className, title, titleClassName, children, noContent, style,
 }: SectionFactoryProps) => (
   { ref, key }: SectionProps,
 ) => (
   <section className={`${className} ${noContent ? '' : styles.section}`} style={style} ref={ref} key={key}>
     {noContent ? children : (
-      <div className={styles.content}>
-        {children}
-      </div>
+      <>
+        <header>
+          <h2 className={`${styles.title} ${titleClassName}`}>{title}</h2>
+        </header>
+        <div className={styles.content}>
+          {children}
+        </div>
+      </>
     )}
   </section>
 );

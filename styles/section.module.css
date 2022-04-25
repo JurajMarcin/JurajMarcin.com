@@ -7,10 +7,19 @@
   font-size: 1.2em;
 }
 
+.title {
+  margin-top: 0;
+  font-size: 3em;
+}
+
 @media screen and (min-width: 700px) {
   .content {
     max-width: 1000px;
     margin: auto;
     font-size: 1.5em;
+  }
+
+  .title {
+    font-size: 4em;
   }
 }

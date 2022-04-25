@@ -2,13 +2,3 @@
   color: var(--darker-foreground);
   background-color: var(--darker-background);
 }
-
-.title {
-  font-size: 3em;
-}
-
-@media screen and (min-width: 700px) {
-  .title {
-    font-size: 4em;
-  }
-}
