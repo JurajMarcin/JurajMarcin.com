@@ -43,7 +43,7 @@ const Index: NextPage = () => {
       component: Experience,
     },
     contact: {
-      name: 'Contact Me',
+      name: 'Contact',
       ref: createRef<HTMLDivElement>(),
       component: Contact,
     },

@@ -1,13 +1,16 @@
 .header {
   display: flex;
+  flex-direction: column;
+  gap: 1em;
   align-items: center;
   justify-content: center;
-  column-gap: 1em;
+  margin: 1em 0;
 }
 
 .name {
   flex-basis: 0;
   flex-grow: 1;
+  margin: 0;
   text-align: right;
 }
 
@@ -18,14 +21,15 @@
 .title {
   flex-basis: 0;
   flex-grow: 1;
+  margin: 0;
   text-align: left;
 }
 
 .sep {
   display: block;
   justify-self: center;
-  width: 2px;
-  height: 1.17em;
+  width: 1.17em;
+  height: 2px;
   background: var(--lighter-foreground);
 }
 
@@ -50,5 +54,18 @@
 }
 
 .list {
+  padding: 0;
   list-style: inside;
+}
+
+@media screen and (min-width: 600px) {
+  .header {
+    flex-direction: row;
+  }
+
+  .sep {
+    display: block;
+    width: 2px;
+    height: 1.17em;
+  }
 }
